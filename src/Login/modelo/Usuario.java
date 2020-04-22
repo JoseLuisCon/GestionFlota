@@ -49,7 +49,9 @@ public class Usuario {
         this.fecha_baja = fecha_baja;
     }
     
-    
+    public void setId_Usuario(int Id){
+        this.ID_Usuario=Id;
+    }
 
     public int getID_Usuario() {
         return ID_Usuario;
@@ -72,13 +74,7 @@ public class Usuario {
         this.pass = pass;
     }
 
-    public String getRoll() {
-        return tipo_Usuario;
-    }
-
-    public void setRoll(String roll) {
-        this.tipo_Usuario = roll;
-    }
+   
 
     @Override
     public String toString() {

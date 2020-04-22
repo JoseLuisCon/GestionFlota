@@ -28,13 +28,10 @@ public class VUsuarioController implements InterfaceValidacion {
             usuario.setPass(txtPass);
         }
     }
-
-    /**
-     *
-     */
+ 
     @Override
-    public boolean loginUsuario() {
-        return usuarioDAO.getUsuario(usuario);
+    public Usuario getUsuario(Usuario user){
+        return usuarioDAO.getUsuario(user);
     }
 
 }
