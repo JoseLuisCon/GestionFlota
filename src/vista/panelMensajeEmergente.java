@@ -60,7 +60,7 @@ public class panelMensajeEmergente extends JPanel {
         lblMensaje.setHorizontalTextPosition(SwingConstants.CENTER);
 
         add(lblMensaje);
-        padre.add(this);
+        
 
         //cogemos medidas del panel contenedor
         panelPadreWidth = padre.getWidth();
@@ -72,6 +72,8 @@ public class panelMensajeEmergente extends JPanel {
 
         //ponemos el panel en laposición incial
         fnSetLocation(xPos, yPos);
+        
+//        padre.add(this);
         setVisible(true);
 
         //posiciion final a la que va a llegar, como queremos desplazar de arriba hacia abajo la posición final es en el eje y 
